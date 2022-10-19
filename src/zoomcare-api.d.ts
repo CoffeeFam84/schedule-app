@@ -44,3 +44,8 @@ export interface LoginResponse {
 export interface ApiError {
     error: string;
 }
+
+export interface ClinicAppointment extends AppointmentSlot {
+    clinic: Clinic;
+    availableTimes: string[]
+}
